@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: 0;
+
 }
+
 
 body{
   height: 100vh;
@@ -42,35 +44,46 @@ body{
 .number11{ --rotate: 330deg}
 
 .hand{
+  /* --rotate : 0;  */
   position: absolute;
-  height: 50%;
-  width: 10px;
+  /* height: 50%; */
+  /* width: 10px; */
   background-color:black ;
   left: 50%;
   bottom: 50%;
   z-index: 10;
-  transform: translate(-50%);
+  /* transform: translate(-50%); */
   transform-origin: bottom;
+  /* transform: translate(-50%) ; */
+  /* rotate(calc(var(--rotate)* 1deg)); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* transform: rotate(30deg); */
 }
 .second-hand{
   width: 3px;
   height: 45%;
-   /* --rotate : 30deg */
-  transform: rotate(900deg); 
+   /* --rotate : 0; */
+  /* transform: rotate(90deg);  */
   background-color: red;
 }
 .minute-hand{
   width: 5px;
   height: 40%;
    /* --rotate : 30deg */
-  transform: rotate(30deg); 
+  /* transform: rotate(30deg);  */
+  
+  /* transform: translate(-50%); */
+  /* --rotate : 0; */
 }
 .hour-hand{
   width: 7px;
   height: 30%;
    /* --rotate : 30deg */
-  transform: rotate(60deg); 
+  /* transform: rotate(60deg);  */
+  /* --rotate: 0; */
+  /* transform: translate(50); */
 }
 .clock::after{
   position: absolute;
